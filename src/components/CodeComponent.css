@@ -1,0 +1,62 @@
+#background {
+    /*     background-image: linear-gradient(90.6deg, rgb(59, 158, 255) -1.2%, rgb(246, 135, 255) 91.6%);
+ */
+    margin: 0px auto;
+    width: auto;
+    height: auto;
+    min-width: 720px;
+    min-height: 154px;
+    max-width: 920px;
+    padding: 100px;
+}
+
+
+/* 
+    https://stackoverflow.com/questions/1632005/ordered-list-html-lower-alpha-with-right-parentheses, 
+    https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_ol_type_all_css, 
+    https://www.w3schools.com/tags/att_ol_type.asp 
+*/
+ol.lista {
+    list-style-type: lower-alpha;
+    margin-left: -32px;
+    list-style-type: lower-alpha;
+}
+
+
+ol.lista {
+    counter-reset: list;
+}
+
+ol.lista>li {
+    list-style: none;
+}
+
+ol.lista>li::before {
+    content: counter(list, lower-alpha) ") ";
+    counter-increment: list;
+}
+
+/* span.resposta {
+    padding-left: -12px;
+} */
+
+pre>code[class='js hljs javascript'] {
+    background-color: whitesmoke;
+    width: fit-content;
+    /* https://stackoverflow.com/questions/8919776/html-justify-text-align-with-pre-tag */
+    padding: 12%;
+
+    /* white-space: pre-line; */
+    background-color: antiquewhite;
+    width: fit-content;
+    padding: 1em;
+    border-radius: 5px;
+    /* border: 1px solid #c0bfbf00; */
+    margin-top: 1em;
+}
+
+img[id='print'] {
+    border: 5px solid #555;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+}
