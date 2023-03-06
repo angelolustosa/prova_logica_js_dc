@@ -185,7 +185,10 @@ nameFile('Raimundo José dos Santos Nascimento') // raimundo_jose_06032023`,
             'IMC entre 35 e  39,9 = obesidade grau II',
             'IMC maior que 39,9 exibir = obesidade grau III'
         ],
-        image: imc
+        image: imc,
+        resposta: {
+            snippet: 'https://github.com/angelolustosa/prova_logica_js_dc/tree/main/src/html/imc', code: true
+        }
         /* resposta: {
             snippet: `function nameFile(name){
 let primeiroNome = name.split(' ')[0].toLowerCase();

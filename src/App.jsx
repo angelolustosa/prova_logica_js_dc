@@ -9,7 +9,7 @@ function App() {
 
   let loadPrint = q => {
     if (q?.image) {
-      return <img id='print' src={q?.image} alt="imc_print" width={300} />
+      return <div><img id='print' src={q?.image} alt="imc_print" width={300} />gi </div>
     }
   }
 
