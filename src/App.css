@@ -12,6 +12,15 @@
   transition: filter 300ms;
 } */
 
+.titulo {
+  text-align: center;
+  padding: 1rem;
+}
+
+.subtitulo {
+  text-align: center;
+}
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
